@@ -12,6 +12,9 @@ function TruckerPage() {
         </div>
         <h1>Welcome to the trucker page!</h1>
         <Link to = "/MothersList"><button>Find a mother near me</button></Link>
+        <br></br>
+        <br></br>
+        <Link to = "/Review"><button>Review your last stay</button></Link>
       </div>
     );
   }

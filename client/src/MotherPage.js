@@ -17,8 +17,6 @@ function MotherPage() {
       <h1>Welcome to the mother page!</h1>
       <Link to = "/NewMother"><button>New Mother Set-Up</button></Link>
       <br></br>
-      <br></br>
-      <Link to = "/MotherUpdate"><button>Update Your Mother Page</button></Link>
     </div>
   );
 }
