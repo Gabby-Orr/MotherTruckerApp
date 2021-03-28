@@ -17,6 +17,10 @@ const mySplashPage = () => (
                 <br/>
                 <Link to = "/trucker"><button class="btn">I am a Trucker</button></Link>
             </div>
+            <div>
+                <br/>
+                <Link to = "/admin"><button class="btn2">Admin</button></Link>
+            </div>
         </body>   
     </div>
 );

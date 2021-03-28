@@ -1,27 +1,16 @@
 {
   "name": "mothertruckerapp",
-  "version": "1.0.0",
-  "description": "Our project for the 2021 RowdyHacks competetion! Contributors: Travis Mewborne, Gabby Orr, Jenna Pappas",
-  "main": "index.js",
-  "engines":{
-    "node": "15.12.0"
-  },
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node server/index.js",
-    "build": "cd client && npm install && npm run build"
+    "start": "node server/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Gabby-Orr/MotherTruckerApp.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Gabby-Orr/MotherTruckerApp/issues"
-  },
-  "homepage": "https://github.com/Gabby-Orr/MotherTruckerApp#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pg": "^8.5.1"
   }
 }
