@@ -9,10 +9,12 @@ function AdminPage() {
     return (
       <div className="Admin">
 
-        <div class="header">
+        <div className="header">
             <h1><Link to = "/"><button>Back to Main Page</button></Link></h1>
         </div>
-        <h2>Welcome to the admin page!</h2>
+        <div className =  "MainArea">
+          <h2>Welcome to the admin page!</h2>
+        </div>
       </div>
     );
   }

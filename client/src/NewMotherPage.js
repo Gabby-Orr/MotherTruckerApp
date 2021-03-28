@@ -13,20 +13,6 @@ const newMother = async values => {
   return data;
 };
 
-// function NewMotherPage() {
-//     return (
-//       <div className="MotherUpdate">
-{/* <div class="header">
-<h1><Link to = "/mother"><button>Back to Mother Page</button></Link></h1>
-</div> */}
-//         <h1>Welcome to the new mother page!</h1>
-//       </div>
-//     );
-//   }
-  
-//   export default NewMotherPage;
-
-
 class NewMotherPage extends Component {
     state = {
         title: "",
@@ -51,58 +37,77 @@ class NewMotherPage extends Component {
         <div class="header">
             <h1><Link to = "/mother"><button>Back to Mother Page</button></Link></h1>
         </div>
+
+        <div className = "form">
         <h2>Please Enter Your Information</h2>
         <hr />
-        <Form.Group controlId="formTitle">
-          <Form.Label>Name of Business</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Enter business name"
-            onChange={this.handleChange}
-          />
-          {/* <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text> */}
-        </Form.Group>
+        <br/>
+          {//Work in progress:
+           // Reformat table to right justify lables and left justify textboxes
+          }
+          <table>
 
-        <Form.Group controlId="formLocation">
-          <Form.Label>Location</Form.Label>
-          <Form.Control
-            type="location"
-            placeholder="Location"
-            onChange={this.handleChange}
-          />
-        </Form.Group>
+            <tr>
+            <Form.Group controlId="formTitle">
+              <td><Form.Label>Name of Business</Form.Label></td>
+              <td>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter business name"
+                  onChange={this.handleChange}
+                />
+              </td>
+            </Form.Group>
+            </tr>
 
-        <Form.Group controlId="formPhone">
-          <Form.Label>Phone</Form.Label>
-          <Form.Control
-            type="phone"
-            placeholder="Phone"
-            onChange={this.handleChange}
-          />
-        </Form.Group>
+            <tr>
+            <Form.Group controlId="formLocation">
+              <td><Form.Label>Location</Form.Label></td>
+              <td>
+                <Form.Control
+                  type="location"
+                  placeholder="Location"
+                  onChange={this.handleChange}
+                />
+              </td>
+            </Form.Group>
+            </tr>
 
-        <Form.Group controlId="formMessage">
-          <Form.Label>Message for truckers (amenities, hours, etc)</Form.Label>
-          <Form.Control
-            type="message"
-            placeholder="Message"
-            onChange={this.handleChange}
-          />
-        </Form.Group>
+            <tr>
+              <Form.Group controlId="formPhone">
+                <td><Form.Label>Phone</Form.Label></td>
+                <td><Form.Control
+                    type="phone"
+                    placeholder="Phone"
+                    onChange={this.handleChange}
+                  />
+                </td>
+              </Form.Group>
+            </tr>
 
-        <Form.Group controlId="formTruckerFriendly">
-          <Form.Check type="checkbox" label="Trucker Friendly" />
-        </Form.Group>
+            <tr>
+            <Form.Group controlId="formMessage">
+              <td><Form.Label>Message for truckers (amenities, hours, etc)</Form.Label></td>
+              <td><Form.Control
+                type="message"
+                placeholder="Message"
+                onChange={this.handleChange}
+              />
+              </td>
+            </Form.Group>
+            </tr>
 
-        <input type="submit" value="Submit" />
-        {/* <Button
-          variant="primary"
-          type="button"
-           onClick={this.nextComponent}>{() => newMother(this.state)}
-          Submit
-        </Button> */}
+
+            <tr>
+            <Form.Group controlId="formTruckerFriendly">
+              <td id="left">Trucker Friendly?</td>
+              <td><Form.Check type="checkbox" label="" /></td>
+            </Form.Group>
+            </tr>
+
+            <tr><td><input type="submit" value="Submit" /></td></tr>
+          </table>
+        </div>
       </form>
     );
   }

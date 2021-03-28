@@ -3,14 +3,7 @@ import "./Pages.css";
 import React from 'react';
 import "./Pages.css";
 
-// function MotherDisplayPage(props){
-    // return (
-    //     <div className="MotherDisplayPage" style={{ justifyContent: "center" }}>
-    //         <div className="MotherDisplay"> </div>
-    //         <Info/>
-    //     </div>
-    // );
-// }
+
 const MotherDisplayPage = (props) => {
     return(
         <div className="MotherDisplayPage" style={{ justifyContent: "center" }}>

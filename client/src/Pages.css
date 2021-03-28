@@ -5,3 +5,24 @@
     color: white;
     font-size: 10px;
   }
+
+.table{
+  width:75%;
+  text-align: center;
+  column-width:500px;
+  justify-content: center;
+  margin-left:10%;
+}
+
+table tr td {
+  
+  table-layout: fixed;
+  margin-left: 20%;
+  min-width:50%;
+  padding:5px;
+  /*border: 2px solid black;*/
+}
+
+tr#left {
+  min-width: 100px;
+}
