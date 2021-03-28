@@ -32,12 +32,12 @@ li a {
 }
 
 li a:hover {
-  background-color: white;
+  background-color: #111;
 }
 
 	/* background */
     body {
-        background-color: white;
+        background-color: rgb(43, 40, 192);
 	}
 	
 
