@@ -4,6 +4,8 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import React, { Component } from 'react'
 import "./Pages.css";
+import MotherDisplayPage from './MotherDisplayPage'
+import HardCodeDisplayPage from './HardCodeDisplayPage'
 
 const newMother = async values => {
   const res = await fetch({ url: "/api", method: "POST", body: values });
@@ -35,10 +37,17 @@ class NewMotherPage extends Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
+  nextComponent = () =>{
+    <MotherDisplayPage title = {this.title} location = {this.location} phone = {this.phone} message = {this.message}/>
+  };
+  handleSubmit = (e) => {
+    e.preventDefault();
+    window.location.href = '/YourMotherDisplay';
+  }
   render() {
     return (
         
-      <Form>
+        <form onSubmit={this.handleSubmit}>
         <div class="header">
             <h1><Link to = "/mother"><button>Back to Mother Page</button></Link></h1>
         </div>
@@ -87,14 +96,14 @@ class NewMotherPage extends Component {
           <Form.Check type="checkbox" label="Trucker Friendly" />
         </Form.Group>
 
-        <Button
+        <input type="submit" value="Submit" />
+        {/* <Button
           variant="primary"
           type="button"
-          onClick={() => newMother(this.state)}
-        >
+           onClick={this.nextComponent}>{() => newMother(this.state)}
           Submit
-        </Button>
-      </Form>
+        </Button> */}
+      </form>
     );
   }
 }
