@@ -1,5 +1,5 @@
 # MotherTruckerApp
-Our project for the 2021 RowdyHacks competetion!
+Our project for the 2021 RowdyHacks competition!
 Contributors: Travis Mewborne, Gabby Orr
 
 Idea:
